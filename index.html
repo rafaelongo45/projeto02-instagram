@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href = "css/reset.css" rel = "stylesheet">
+    <link href = "css/style.css" rel = "stylesheet">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <!-- ocupa a largura inteira do site e fica no topo
+    possui 3 divs dentro dela (uma com logo, barrinha vertical e instagram)
+    (outra com a barra de busca - pesquisar centralizado e defasado)
+    (outra com os icones)-->
+    <div class="barra-topo">
+        <div class="conteudo-barra">
+            <div class = "logo">
+                <a href = "#"><ion-icon name="logo-instagram" class = "icones-barra"></ion-icon></a>
+                <div class="barra-vertical"></div>
+                <img src="imagens/logo.png" alt="logo do instagram">
+            </div>
+            <div class="barra-busca">
+                <p> Pesquisar</p>
+            </div>
+            <div class="icones-uteis">
+                <a href = "#"><ion-icon name="paper-plane-outline" class = "icones-barra"></ion-icon></a>
+                <a href = "#"> <ion-icon name="compass-outline" class = "icones-barra"></ion-icon></a>
+                <a href = "#"><ion-icon name="heart-outline" class = "icones-barra"></ion-icon></a>
+                <a href = "#"><ion-icon name="person-outline" class = "icones-barra"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- div que contém stories, sidebar e posts-->
+    <div class="conteudo-pagina">
+        <div class="stories">
+            <div class="caixinha-stories"></div>
+            <div class="caixinha-stories"></div>
+            <div class="caixinha-stories"></div>
+            <div class="caixinha-stories"></div>
+            <div class="caixinha-stories"></div>
+            <div class="caixinha-stories"></div>
+            <div class="caixinha-stories"></div>
+            <div class="caixinha-stories"></div>
+            <div class="caixinha-stories"></div>
+        </div>
+        <div class="post">
+            <div class="post-barra"></div>
+            <div class="post-imagem">
+                <img src="imagens/dawg.jpg" alt="">
+            </div>
+            <div class="post-baixo"></div>
+        </div>
+
+        <div class="post">
+            <div class="post-barra"></div>
+            <div class="post-imagem">
+                <img src="imagens/ABRAVA-dedo.jpg" alt="">
+            </div>
+            <div class="post-baixo"></div>
+        </div>
+        
+    </div>
+    <div class="vazio"></div>
+    <div class="sidebar">
+        <div class="conteudo-sidebar">
+            <div class="meu-perfil">
+                <img src="imagens/profile/catanacomics 1.png" alt="">
+                <p><strong>catanacomics</strong> <br> <small>Catana</small>
+                </p>
+            </div>
+            <div class="sugestoes">
+                <p><strong>Sugestões pra você</strong> <small>Ver tudo</small></p>
+            
+                <div class = "recomendados"></div>
+                <div class = "recomendados"></div>
+                <div class = "recomendados"></div>
+                <div class = "recomendados"></div>
+                <div class = "recomendados"></div>
+            </div>
+            <div class ="informacoes">
+                <p>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
+                    Termos • Localizações • Contas mais relevantes • Hashtags • 
+                    Idioma
+                </p> 
+
+                <br>
+                
+                <p>© 2021 INSTAGRAM DO FACEBOOK</p>
+            </div>
+        </div>
+    </div>
+    <!-- script para pegar os ícones-->
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
