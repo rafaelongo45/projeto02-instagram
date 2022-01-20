@@ -80,13 +80,12 @@ a, a:visited{
 }
 
 .sidebar{
-    background-color:darksalmon ;
     height:100vh;
     width: 100%;
     max-width:293px;
     margin-top: 84px;
     position:fixed;
-    left:59vw;
+    left:60vw;
     right:0;
 }
 
@@ -110,18 +109,19 @@ a, a:visited{
 }
 
 .meu-perfil strong{
-    font-weight: bold;
+    font-weight: 500;
+
 }
 
 .meu-perfil small{
     color:#8E8E8E;
+    line-height: 16px;
 
 }
 
 .sugestoes{
-    background-color:limegreen ;
     width:100%;
-    height:22vh;
+    height:27vh;
     margin: 5px 0;
     display: flex;
     flex-wrap: wrap;
@@ -129,24 +129,51 @@ a, a:visited{
     justify-content: space-between;
 }
 
-.recomendados{
-    background-color: maroon;
-    width:100%;
-    height:32px;
-}
-.sugestoes strong{
+.sugestoes small{
+    margin-right:127px;
+    margin-bottom:18px;
     color: #8E8E8E;
     font-size: 12px;
-    margin-right:122px;
 }
 
-.sugestoes small{
-    color:#262626;
-   
+.sugestoes strong{
+    color: #262626;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.recomendados{
+    width:100%;
+    height:34px;
+    display: flex;
+    align-items: center;
+}
+
+.recomendados p{
+    color:#139EF2;
+    font-size:12px;
+
+}
+
+.perfilzinho{
+    width:40%;
+    margin:6px 96px 6px 8px;
+}
+
+.perfilzinho strong{
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.perfilzinho small{
+    color: #8E8E8E;
+    font-size: 12px;
+    margin:0;
+
 }
 
 .informacoes{
-    background-color:mediumorchid;
     width: 100%;
     height: 10vh;
     margin-top: 30px;
