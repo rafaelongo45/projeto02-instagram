@@ -3,8 +3,8 @@ body{
     font-family: 'Roboto', sans-serif;
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
-
 a, a:visited{
     text-decoration: none;
     color:black;
@@ -18,12 +18,11 @@ a, a:visited{
     justify-content: center;
     align-items: center;
     position:fixed;
-    top: 0;
-    left: 0;
+    z-index:3;
 }
 
 .conteudo-barra{
-    width: 48.5vw;
+    width: 935px;
     height: 40px;
     display:flex;
     align-items: center;
@@ -32,7 +31,7 @@ a, a:visited{
 }
 
 .logo{
-    width: 7.5vw;
+    width: 145px;
     height: inherit;
     display: flex;
     align-items: center;
@@ -50,7 +49,7 @@ a, a:visited{
 }
 
 .barra-busca{
-    width: 12.5vw;
+    width: 210px;
     height: 28px;
     background-color: #FAFAFA;
     display: flex;
@@ -65,33 +64,27 @@ a, a:visited{
 
 .icones-uteis{
     height: 28px;
-    width: 8vw;
+    width: 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .conteudo-pagina{
-    background-color: red;
-    height: 100%;
-    width: 614px;
-    margin: 84px 40.5vw 0 auto;
-    
-}
-
-.sidebar{
+    width: 935px;
     height:100vh;
-    width: 100%;
-    max-width:293px;
     margin-top: 84px;
-    position:fixed;
-    left:60vw;
-    right:0;
+    display:flex;
+    flex-wrap: wrap;  
+    position:absolute;
 }
 
 .conteudo-sidebar{
     width:100%;
-    height:45vh;
+    max-width:293px;
+    height:467px;
+    position:fixed;
+    margin-left:640px;
 }
 
 .meu-perfil{
@@ -183,34 +176,62 @@ a, a:visited{
     color: #C7C7C7;
     font-size:11px;
 }
+
 .stories{
-    background-color: darkblue;
-    width: 100%;
-    height:13vh;
+    background-color: #FFFFFF;
+    width: 614px;
+    height:118px;
     margin-bottom: 24px;
     display:flex;
     align-items: center;
+    position:relative;
     overflow-x: hidden;
 }
 
+.setinha{
+    position:absolute;
+    font-size: 26px;
+    left: 580px;
+    color: #FFFFFF;
+    z-index: 5;
+}
+
 .caixinha-stories{
-    background-color: papayawhip;
-    min-width: 78px;
-    width:78px;
+    width: 66px;
     height: 81px;
-    margin: 0 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+}
+
+.caixinha-stories img{
+    max-width: 66px;
+    
+}
+
+.caixinha-stories strong{
+    position: absolute;
+    margin-bottom: 11px;
+    overflow:hidden;
+}
+
+.caixinha-stories p{
+    margin-top:7px;
+    font-size:12px;
+    font-weight: 400;
+    color: #262626;
 }
 
 .post{
-    background-color: darkkhaki;
-    width:100%;
-    height: 86vh;
+    background-color: #FFFFFF;
+    width:614px;
+    height: 749px;
     margin-bottom: 60px;
-}
+}   
 
 .post-imagem{
-    width: 100%;
-    height:auto;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -222,13 +243,78 @@ a, a:visited{
 }
 
 .post-barra{
-    background-color: darkmagenta;
     width: 100%;
-    height: 8.25%;
+    height: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.post-barra img{
+    margin-left:17px;
+
+}
+
+.post-barra p{
+    margin-left:15px;
+    font-weight: 500;
+    color: #262626;
+    font-size: 14px;
+
 }
 
 .post-baixo{
-    background-color: darkorange;
+    height:100%;
     width:100%;
-    height:10.25%;
+    height:10.2%;
+}   
+
+.icone{
+    position:relative;
+    left:460px;
+}
+
+.top{
+    width:100%;
+    height:50%;
+    display:flex;
+    align-items: center;
+}
+
+.icon{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.o-diferentao{
+    position:relative;
+    left:480px;
+    font-size: 20px;
+}
+
+.bot{
+    width:100%;
+    height:50%;
+    display:flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.bot img{
+    margin-left: 15px;
+}
+.bot p{
+    margin-left: 5px;
+}
+
+.bot strong{
+    font-weight: 500;
+}
+
+
+@media (max-width: 935px){
+    body{
+        display: none;
+    }
 }
