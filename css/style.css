@@ -1,4 +1,4 @@
-@media (min-width:936px) {
+@media (min-width:935px) {
 body{
     background-color: #FAFAFA;
     font-family: 'Roboto', sans-serif;
@@ -130,34 +130,31 @@ a, a:visited{
     flex-direction: column;
     justify-content: space-between;
     padding-top:15px;
+
 }
 
 .sugestoes small{
-    margin-right:127px;
-    margin-bottom:18px;
+    margin-right:135px;
     color: #8E8E8E;
-    font-size: 12px;
-}
+    font-size: 12px;}
 
 .sugestoes strong{
     color: #262626;
     font-size: 12px;
     font-weight: 500;
-    margin-bottom: 10px;
 }
 
 .recomendados{
     width:100%;
-    height:34px;
+    height:fit-content;
     display: flex;
     align-items: center;
-    padding:5px 0;
+    padding-top:5px;
 }
 
 .recomendados p{
     color:#139EF2;
     font-size:12px;
-
 }
 
 .perfilzinho{
@@ -169,13 +166,14 @@ a, a:visited{
     color: #262626;
     font-size: 14px;
     font-weight: 500;
+
 }
 
 .perfilzinho small{
     color: #8E8E8E;
     font-size: 12px;
     margin:0;
-
+    line-height: 20px;
 }
 
 .informacoes{
@@ -250,7 +248,6 @@ a, a:visited{
 .post-imagem img{
     height: auto;
     width: 100%;
-
 }
 
 .post-barra{
@@ -266,7 +263,9 @@ a, a:visited{
 
 .post-barra img{
     margin-left:17px;
-    
+    width:32px;
+    height:32px;
+    border-radius: 50%;
 }
 
 .post-barra p{
@@ -304,15 +303,70 @@ a, a:visited{
 
 .bot{
     width:100%;
-    height:50%;
+    height:fit-content;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position:relative;
+
+}
+
+.comentario{
+    width:100%;
+    height:fit-content;
+    font-size: 14px;
+    padding-top:10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.comentario-icone{
+    position:absolute;
+    left:95%
+}
+
+.comentar{
+    width:100%;
     display:flex;
     align-items: center;
-    font-size: 14px;
-    padding-bottom: 15px;
+    justify-content: space-around;
+    padding:10px;
+    border: 1px solid #dbdbdb5b;
+    height:fit-content;
+    margin-top:15px;
+
+    
+}
+
+.comentar input{
+    width:80%;
+    border:0;
+    
+}
+
+.comentar button{
+    color:#B2DFFC;
+    background-color: transparent;
+    border:0;
+    font-size: 14px;;
+}
+
+.comentar button:hover{
+    color:#0095F6;
+    transition-duration: 300ms;
+}
+
+.icon-comment{  
+    font-size: 25px;
 }
 
 .bot img{
     margin-left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 .bot p{
     margin-left: 5px;
@@ -336,9 +390,9 @@ a, a:visited{
 
 .mp4{
     width:100%;
-    height: auto;
+    height: 614px;
     max-width:614px;
-
+    object-fit: cover;
 }
 
 .barra-inferior{
@@ -348,7 +402,7 @@ a, a:visited{
 }
 
 
-@media (min-width: 614px) and (max-width: 935px){
+@media (min-width: 614px) and (max-width: 934px){
     body{
         background-color: #FAFAFA;
         font-family: 'Roboto', sans-serif;
@@ -589,6 +643,7 @@ a, a:visited{
         height: fit-content;
         margin-bottom: 60px;
         border:1px solid #DBDBDB;
+        position:relative;
     }   
     
     .post-imagem img{
@@ -610,6 +665,9 @@ a, a:visited{
     
     .post-barra img{
         margin-left:17px;
+        width:32px;
+        height:32px;
+        border-radius: 50%;
         
     }
     
@@ -648,15 +706,68 @@ a, a:visited{
     
     .bot{
         width:100%;
-        height:50%;
+        height:fit-content;
+        font-size: 14px;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position:relative;
+    }
+
+    .comentario{
+        width:100%;
+        height:fit-content;
+        font-size: 14px;
+        padding-top:10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .comentario-icone{
+        position:absolute;
+        left:95%
+    }
+    
+    .comentar{
+        width:100%;
         display:flex;
         align-items: center;
-        font-size: 14px;
-        padding-bottom: 15px;
+        justify-content: space-around;
+        padding:10px;
+        border: 1px solid #dbdbdb5b;
+        height:fit-content;
+        margin-top:15px;
+        
+    }
+    
+    .comentar input{
+        width:80%;
+        border:0;
+        
+    }
+    
+    .comentar button{
+        color:#B2DFFC;
+        background-color: transparent;
+        border:0;
+        font-size: 14px;;
+    }
+    
+    .comentar button:hover{
+        color:#0095F6;
+        transition-duration: 300ms;
+    }
+    
+    .icon-comment{  
+        font-size: 25px;
     }
     
     .bot img{
         margin-left: 15px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
     }
     .bot p{
         margin-left: 5px;
@@ -668,8 +779,9 @@ a, a:visited{
 
     .mp4{
         width:100%;
-        height: auto;
-        max-width:612px;
+        height: 614px;
+        max-width:614px;
+        object-fit: cover;
     }
     .barra-inferior{
         display:none;
@@ -858,8 +970,6 @@ a, a:visited{
         font-size:11px;
     }
 
-    
-    
     .stories{
         background:transparent;
         width: 100%;
@@ -913,13 +1023,12 @@ a, a:visited{
         height: fit-content;
         margin-bottom: 60px;
         border:1px solid #DBDBDB;
-
+        position:relative;
     }   
     
     .post-imagem img{
         height: auto;
         width: 100%;
-
     }
     
     .post-barra{
@@ -935,6 +1044,9 @@ a, a:visited{
     
     .post-barra img{
         margin-left:17px;
+        width:32px;
+        height:32px;
+        border-radius: 50%;
         
     }
     
@@ -960,6 +1072,7 @@ a, a:visited{
         margin: 10px 0;
         position:relative;
     }
+
     .icon{
         margin-left: 15px;
         font-size: 20px;
@@ -973,16 +1086,68 @@ a, a:visited{
     
     .bot{
         width:100%;
-        height:50%;
+        height:fit-content;
+        font-size: 14px;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;        
+    }
+    
+    .comentario{
+        width:100%;
+        height:fit-content;
+        font-size: 14px;
+        padding-top:10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .comentario-icone{
+        position:absolute;
+        left:95%
+    }
+    
+    .comentar{
+        width:100%;
         display:flex;
         align-items: center;
-        font-size: 14px;
-        padding-bottom: 15px;
+        justify-content: space-around;
+        padding:10px;
+        border: 1px solid #dbdbdb5b;
+        height:fit-content;
+        margin-top:15px;
         
     }
     
+    .comentar input{
+        width:80%;
+        border:0;
+        
+    }
+    
+    .comentar button{
+        color:#B2DFFC;
+        background-color: transparent;
+        border:0;
+        font-size: 14px;;
+    }
+    
+    .comentar button:hover{
+        color:#0095F6;
+        transition-duration: 300ms;
+    }
+    
+    .icon-comment{  
+        font-size: 25px;
+    }
+
     .bot img{
         margin-left: 15px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
     }
     .bot p{
         margin-left: 5px;
@@ -1002,8 +1167,9 @@ a, a:visited{
 
     .mp4{
         width:100%;
-        height: auto;
-        max-width:612px;
+        height: 614px;
+        max-width:614px;
+        object-fit: cover;
     }
 
     .barra-inferior{
