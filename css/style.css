@@ -1,3 +1,4 @@
+@media (min-width:936px) {
 body{
     background-color: #FAFAFA;
     font-family: 'Roboto', sans-serif;
@@ -19,6 +20,7 @@ a, a:visited{
     align-items: center;
     position:fixed;
     z-index:3;
+    border:1px solid #DBDBDB;
 }
 
 .conteudo-barra{
@@ -27,7 +29,7 @@ a, a:visited{
     display:flex;
     align-items: center;
     justify-content: space-between;
-
+    margin: 0 20px;
 }
 
 .logo{
@@ -36,6 +38,10 @@ a, a:visited{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.desk-nao{
+    display:none;
 }
 
 .icones-barra{
@@ -72,7 +78,6 @@ a, a:visited{
 
 .conteudo-pagina{
     width: 935px;
-    height:100vh;
     margin-top: 84px;
     display:flex;
     flex-wrap: wrap;  
@@ -82,17 +87,21 @@ a, a:visited{
 .conteudo-sidebar{
     width:100%;
     max-width:293px;
-    height:467px;
+    height:fit-content;
     position:fixed;
+    display: flex;
+    flex-wrap: wrap;
     margin-left:640px;
+
 }
 
 .meu-perfil{
     width:100%;
-    height:9vh;
+    height:fit-content;
     margin: 5px 0;
     display: flex;
     align-items: center;
+    padding-top:20px;
 }
 
 .meu-perfil p{
@@ -114,12 +123,13 @@ a, a:visited{
 
 .sugestoes{
     width:100%;
-    height:27vh;
+    height:fit-content;
     margin: 5px 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    padding-top:15px;
 }
 
 .sugestoes small{
@@ -133,6 +143,7 @@ a, a:visited{
     color: #262626;
     font-size: 12px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .recomendados{
@@ -140,6 +151,7 @@ a, a:visited{
     height:34px;
     display: flex;
     align-items: center;
+    padding:5px 0;
 }
 
 .recomendados p{
@@ -168,8 +180,8 @@ a, a:visited{
 
 .informacoes{
     width: 100%;
-    height: 10vh;
-    margin-top: 30px;
+    height: fit-content;
+    margin-top: 20px;
 }
 
 .informacoes p{
@@ -178,7 +190,7 @@ a, a:visited{
 }
 
 .stories{
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     width: 614px;
     height:118px;
     margin-bottom: 24px;
@@ -186,6 +198,7 @@ a, a:visited{
     align-items: center;
     position:relative;
     overflow-x: hidden;
+    border:1px solid #DBDBDB;
 }
 
 .setinha{
@@ -226,20 +239,18 @@ a, a:visited{
 
 .post{
     background-color: #FFFFFF;
-    width:614px;
-    height: 749px;
+    width:100%;
+    max-width: 614px;
+    height: fit-content;
     margin-bottom: 60px;
+    border:1px solid #DBDBDB;
+    position:relative;
 }   
 
-.post-imagem{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .post-imagem img{
-    height: 612px;
-    width: 612px;
+    height: auto;
+    width: 100%;
+
 }
 
 .post-barra{
@@ -248,12 +259,14 @@ a, a:visited{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
+    padding-top:10px;
+    margin-bottom: 10px;
 }
+
 
 .post-barra img{
     margin-left:17px;
-
+    
 }
 
 .post-barra p{
@@ -261,7 +274,7 @@ a, a:visited{
     font-weight: 500;
     color: #262626;
     font-size: 14px;
-
+    
 }
 
 .post-baixo{
@@ -270,26 +283,22 @@ a, a:visited{
     height:10.2%;
 }   
 
-.icone{
-    position:relative;
-    left:460px;
-}
-
 .top{
     width:100%;
     height:50%;
     display:flex;
     align-items: center;
+    margin: 10px 0;
+    position:relative;
 }
-
 .icon{
     margin-left: 15px;
     font-size: 20px;
 }
 
-.o-diferentao{
-    position:relative;
-    left:480px;
+.iconl{
+    position:absolute;
+    left:95%;
     font-size: 20px;
 }
 
@@ -299,6 +308,7 @@ a, a:visited{
     display:flex;
     align-items: center;
     font-size: 14px;
+    padding-bottom: 15px;
 }
 
 .bot img{
@@ -312,8 +322,33 @@ a, a:visited{
     font-weight: 500;
 }
 
+.icone{
+    position:relative;
+    left:460px;
+}
 
-@media (max-width: 935px){
+.o-diferentao{
+    position:relative;
+    left:480px;
+    font-size: 20px;
+}
+
+
+.mp4{
+    width:100%;
+    height: auto;
+    max-width:614px;
+
+}
+
+.barra-inferior{
+    display:none;
+}
+
+}
+
+
+@media (min-width: 614px) and (max-width: 935px){
     body{
         background-color: #FAFAFA;
         font-family: 'Roboto', sans-serif;
@@ -321,6 +356,11 @@ a, a:visited{
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .desk-nao{
+        display: none;
+    }
+
     a, a:visited{
         text-decoration: none;
         color:black;
@@ -335,6 +375,7 @@ a, a:visited{
         align-items: center;
         position:fixed;
         z-index:3;
+        border:1px solid #DBDBDB;
     }
     
     .conteudo-barra{
@@ -343,6 +384,7 @@ a, a:visited{
         display:flex;
         align-items: center;
         justify-content: space-between;
+        margin: 0 20px;
     
     }
     
@@ -388,7 +430,6 @@ a, a:visited{
     
     .conteudo-pagina{
         width: 614px;
-        height:100vh;
         margin-top: 84px;
         display:flex;
         flex-wrap: wrap;  
@@ -503,6 +544,7 @@ a, a:visited{
         align-items: center;
         position:relative;
         overflow-x: hidden;
+        border:1px solid #DBDBDB;
     }
     
     .setinha{
@@ -543,20 +585,16 @@ a, a:visited{
     
     .post{
         background-color: #FFFFFF;
-        width:614px;
-        height: 749px;
+        width:100%;
+        height: fit-content;
         margin-bottom: 60px;
+        border:1px solid #DBDBDB;
     }   
     
-    .post-imagem{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
     .post-imagem img{
-        height: 612px;
-        width: 612px;
+        height: auto;
+        width: 100%;
+
     }
     
     .post-barra{
@@ -565,12 +603,14 @@ a, a:visited{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-    
+        padding-top:10px;
+        margin-bottom: 10px;
     }
+
     
     .post-barra img{
         margin-left:17px;
-    
+        
     }
     
     .post-barra p{
@@ -578,7 +618,7 @@ a, a:visited{
         font-weight: 500;
         color: #262626;
         font-size: 14px;
-    
+        
     }
     
     .post-baixo{
@@ -587,26 +627,22 @@ a, a:visited{
         height:10.2%;
     }   
     
-    .icone{
-        position:relative;
-        left:460px;
-    }
-    
     .top{
         width:100%;
         height:50%;
         display:flex;
         align-items: center;
+        margin: 10px 0;
+        position:relative;
     }
-    
     .icon{
         margin-left: 15px;
         font-size: 20px;
     }
     
-    .o-diferentao{
-        position:relative;
-        left:480px;
+    .iconl{
+        position:absolute;
+        left:95%;
         font-size: 20px;
     }
     
@@ -616,6 +652,7 @@ a, a:visited{
         display:flex;
         align-items: center;
         font-size: 14px;
+        padding-bottom: 15px;
     }
     
     .bot img{
@@ -627,6 +664,15 @@ a, a:visited{
     
     .bot strong{
         font-weight: 500;
+    }
+
+    .mp4{
+        width:100%;
+        height: auto;
+        max-width:612px;
+    }
+    .barra-inferior{
+        display:none;
     }
 }
 
@@ -650,21 +696,23 @@ a, a:visited{
         display: flex;
         justify-content: center;
         align-items: center;
-        position:fixed;
+        position: fixed;
         z-index:3;
+        border:1px solid #DBDBDB;
     }
     
     .conteudo-barra{
-        width: 935px;
+        width: 100vw;
         height: 40px;
         display:flex;
         align-items: center;
         justify-content: space-between;
+        margin: 0 20px;
     
     }
     
     .logo{
-        width: 145px;
+        width: fit-content;
         height: inherit;
         display: flex;
         align-items: center;
@@ -697,16 +745,15 @@ a, a:visited{
     
     .icones-uteis{
         height: 28px;
-        width: 130px;
+        width: fit-content;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     
     .conteudo-pagina{
-        width: 614px;
-        height:100vh;
-        margin-top: 84px;
+        width: 100vw;
+        margin-top: 50px;
         display:flex;
         flex-wrap: wrap;  
         position:absolute;
@@ -810,12 +857,13 @@ a, a:visited{
         color: #C7C7C7;
         font-size:11px;
     }
+
+    
     
     .stories{
-        background-color: #FFFFFF;
-        width: 614px;
-        height:118px;
-        margin-bottom: 24px;
+        background:transparent;
+        width: 100%;
+        height:130px;
         display:flex;
         align-items: center;
         position:relative;
@@ -828,6 +876,7 @@ a, a:visited{
         left: 580px;
         color: #FFFFFF;
         z-index: 5;
+        display:none;
     }
     
     .caixinha-stories{
@@ -860,20 +909,17 @@ a, a:visited{
     
     .post{
         background-color: #FFFFFF;
-        width:100vw;
-        height: 749px;
+        width:100%;
+        height: fit-content;
         margin-bottom: 60px;
+        border:1px solid #DBDBDB;
+
     }   
     
-    .post-imagem{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
     .post-imagem img{
-        height: 612px;
-        width: 612px;
+        height: auto;
+        width: 100%;
+
     }
     
     .post-barra{
@@ -882,12 +928,14 @@ a, a:visited{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-    
+        padding-top:10px;
+        margin-bottom: 10px;
     }
+
     
     .post-barra img{
         margin-left:17px;
-    
+        
     }
     
     .post-barra p{
@@ -895,7 +943,7 @@ a, a:visited{
         font-weight: 500;
         color: #262626;
         font-size: 14px;
-    
+        
     }
     
     .post-baixo{
@@ -904,26 +952,22 @@ a, a:visited{
         height:10.2%;
     }   
     
-    .icone{
-        position:relative;
-        left:460px;
-    }
-    
     .top{
         width:100%;
         height:50%;
         display:flex;
         align-items: center;
+        margin: 10px 0;
+        position:relative;
     }
-    
     .icon{
         margin-left: 15px;
         font-size: 20px;
     }
     
-    .o-diferentao{
-        position:relative;
-        left:480px;
+    .iconl{
+        position:absolute;
+        left:95%;
         font-size: 20px;
     }
     
@@ -933,6 +977,8 @@ a, a:visited{
         display:flex;
         align-items: center;
         font-size: 14px;
+        padding-bottom: 15px;
+        
     }
     
     .bot img{
@@ -944,5 +990,36 @@ a, a:visited{
     
     .bot strong{
         font-weight: 500;
+    }
+
+    .mob-nao{
+        display:none;
+    }
+
+    .desk-nao{
+        display:initial;
+    }
+
+    .mp4{
+        width:100%;
+        height: auto;
+        max-width:612px;
+    }
+
+    .barra-inferior{
+        background: #FAFAFA;
+        width:100vw;
+        position:fixed;
+        bottom:0;
+        display:flex;
+        justify-content: center;
+    }
+
+    .conteudo-barra-inferior{ 
+        width:90%;
+        display:flex;
+        justify-content: space-between;
+        font-size: 22px;
+        padding: 10px 0;
     }
 }
