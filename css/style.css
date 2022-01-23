@@ -202,9 +202,10 @@ a, a:visited{
 .setinha{
     position:absolute;
     font-size: 26px;
-    left: 580px;
     color: #FFFFFF;
     z-index: 5;
+    top:36%;
+    right:1%;
 }
 
 .caixinha-stories{
@@ -295,11 +296,18 @@ a, a:visited{
     font-size: 20px;
 }
 
+.top .iconl{
+    top:0;
+}
+
 .iconl{
     position:absolute;
     left:95%;
     font-size: 20px;
+    top:18px;
 }
+
+
 
 .bot{
     width:100%;
@@ -320,11 +328,13 @@ a, a:visited{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position:relative;
 }
 
 .comentario-icone{
     position:absolute;
-    left:95%
+    top:42%;
+    left: 95%;
 }
 
 .comentar{
@@ -607,6 +617,8 @@ a, a:visited{
         left: 580px;
         color: #FFFFFF;
         z-index: 5;
+        top:36%;
+        right:1%;
     }
     
     .caixinha-stories{
@@ -702,6 +714,11 @@ a, a:visited{
         position:absolute;
         left:95%;
         font-size: 20px;
+        top:18px
+    }
+
+    .top .iconl{
+        top:0;
     }
     
     .bot{
@@ -726,7 +743,7 @@ a, a:visited{
     
     .comentario-icone{
         position:absolute;
-        left:95%
+        left:95%;
     }
     
     .comentar{
@@ -987,6 +1004,7 @@ a, a:visited{
         color: #FFFFFF;
         z-index: 5;
         display:none;
+        
     }
     
     .caixinha-stories{
@@ -1082,7 +1100,13 @@ a, a:visited{
         position:absolute;
         left:95%;
         font-size: 20px;
+        top:18px
     }
+    
+    .top .iconl{
+        top:0;
+    }
+    
     
     .bot{
         width:100%;
